@@ -1,0 +1,121 @@
+/** @format */
+
+.navbar {
+  //   width:inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(229, 229, 229);
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  .navbar-call {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h4 {
+      color: rgb(17, 17, 17);
+      font-family: DIN Pro;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    h3 {
+      color: rgb(255, 152, 70);
+      font-family: DIN Pro;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    h5 {
+      color: rgb(164, 172, 173);
+      font-family: DIN Pro;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+  .hr-nabar {
+    width: 1px;
+    height: 100px;
+    border: 0.5px solid rgb(164, 172, 173);
+    background: rgb(164, 172, 173);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.navbar-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-center-1 {
+  display: flex;
+  align-items: start;
+  text-align: left;
+  flex-direction: column;
+  padding-left: 0px;
+  h4 {
+    /* h3_light */
+    color: rgb(164, 172, 173);
+    font-family: DIN Pro;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  h3 {
+    /* h3_regular */
+    color: rgb(0, 0, 0);
+    font-family: DIN Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.navbar-center-2 {
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  h3 {
+    /* h3_regular */
+    color: rgb(17, 17, 17);
+    font-family: DIN Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  h4 {
+    /* h3_regular */
+    color: rgb(255, 152, 70);
+    font-family: DIN Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}

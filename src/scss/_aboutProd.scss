@@ -1,0 +1,139 @@
+/** @format */
+
+.loading {
+  height: 65vh; /* Ekranni to‘liq qoplaydi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Istasangiz o‘zgartiring */
+}
+
+.aboutProds {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: -2vw;
+  margin-right: -5vh;
+  position: relative;
+  background-color: #fff;
+}
+
+.aboutProd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  img {
+    width: 500px;
+    height: 430px;
+  }
+}
+
+.aboutTexts {
+  padding-left: 50px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  h4 {
+    padding-top: 10px;
+    color: rgb(255, 152, 70);
+    font-family: DIN Pro;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  h3 {
+    width: 54px;
+    color: rgb(17, 17, 17);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: rgb(17, 17, 17);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    height: 100px;
+    overflow-y: scroll;
+  }
+
+  button {
+    width: 188px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* 5 */
+    background: rgb(244, 109, 64);
+    border: 1px solid rgb(244, 109, 64);
+    color: #fff;
+    color: rgb(242, 242, 242);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.aboutPrice {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0px 10px 0px;
+  h3 {
+    width: max-content;
+    color: rgb(0, 0, 0);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+      sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .aboutBtn {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    button {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      /* 5 */
+      background: rgb(244, 109, 64);
+      border-radius: 50%;
+      border: 1px solid rgb(244, 109, 64);
+      font-size: 35px;
+      color: #fff;
+    }
+    h3 {
+      width: max-content;
+      color: rgb(0, 0, 0);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 45px;
+    }
+  }
+}

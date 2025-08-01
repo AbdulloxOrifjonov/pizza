@@ -1,0 +1,135 @@
+/** @format */
+
+.home-product-nav {
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  justify-content: start;
+  .active {
+    color: rgb(0, 0, 0);
+    font-family: DIN Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  h2 {
+    color: rgb(164, 172, 173);
+    font-family: DIN Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+.home-products {
+  padding-top: 30px;
+  // margin-bottom: 30px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  overflow-x: scroll;
+  gap: 40px;
+  padding-bottom: 15px;
+}
+
+.home-prod {
+  min-width: 290px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: start;
+  background: rgb(255, 255, 255);
+  
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  .home-prod-text {
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      padding-top: 10px;
+      font-family: monospace;
+    }
+    p {
+      padding-top: 5px;
+      font-family: sans-serif;
+    }
+  }
+  .home-prod-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  }
+
+  .home-prod-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: rgb(0, 0, 0);
+      font-family: DIN Pro;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+
+    button {
+      cursor: pointer;
+      width: 100px;
+      height: 35px;
+      border-radius: 5px;
+      background: rgb(244, 109, 64);
+      border: 1px solid rgb(244, 109, 64);
+      color: rgb(242, 242, 242);
+      font-family: DIN Pro;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-family: DIN Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  p {
+    color: rgb(164, 172, 173);
+    font-family: DIN Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
