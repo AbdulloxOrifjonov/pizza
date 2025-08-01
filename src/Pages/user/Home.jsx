@@ -15,11 +15,7 @@ const Home = () => {
   const [isActive, setIsActive] = useState(true);
   const { getProds } = useProd();
 
-  // eslint-disable-next-line
-  useEffect(() => {
-    getProd();
-  }, []);
-
+  
   const getProd = async () => {
     await getProds().then((data) => {
       if (data) {
@@ -30,7 +26,11 @@ const Home = () => {
       }
     });
   };
-
+  
+  useEffect(() => {
+    getProd();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const aboutProduct = (id) => {
     if (id) {
       navigate(`/product/${id}`);

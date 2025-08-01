@@ -46,7 +46,7 @@ export const ProdProvider = ({ children }) => {
       console.log("Kelayotgan ID:", id);
       console.log("Response Data:", response.data);
 
-      const matchedProduct = response.data.find((product) => product.id == id.id);
+      const matchedProduct = response.data.find((product) => product.id === id.id);
 
       console.log("Mos kelgan product:", matchedProduct);
       return matchedProduct || null;

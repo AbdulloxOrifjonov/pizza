@@ -25,8 +25,10 @@ const AdminProducts = () => {
     if (data) setProd(data);
   };
 
+  
   useEffect(() => {
     adminGetProd();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const deleteProd = (id) => {

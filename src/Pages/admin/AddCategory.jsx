@@ -31,7 +31,8 @@ const AddCategory = () => {
             apikey: API_KEY,
           },
         },
-      );
+        );
+        console.log(response);
       //   console.log(response.data);
       prodCategories();
     } catch (error) {
@@ -50,6 +51,7 @@ const AddCategory = () => {
   };
   useEffect(() => {
     prodCategories();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

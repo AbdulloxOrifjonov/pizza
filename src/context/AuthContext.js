@@ -11,6 +11,10 @@ export const AuthProvider = ({ children }) => {
 
   const token = localStorage.getItem("token");
 
+const changeUser = () => {
+  setUser("")
+}
+
   const checkAdmin = async () => {
     if (!token) {
       localStorage.setItem("admin", "false");
@@ -23,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  return <AuthContext.Provider value={{ user, checkAdmin }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user,changeUser,  checkAdmin }}>{children}</AuthContext.Provider>;
 };
 
 // Contextni oson olish uchun hook yaratish

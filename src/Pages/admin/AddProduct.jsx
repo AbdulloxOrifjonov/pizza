@@ -17,9 +17,9 @@ const AddProduct = () => {
     gram: "",
     image: "",
   });
-
   useEffect(() => {
     prodCategories();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleChange = (e) => {

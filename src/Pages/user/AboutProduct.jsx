@@ -11,7 +11,7 @@ const AboutProduct = () => {
   const [prodincrement, setProdIncrement] = useState(1);
   const navigate = useNavigate();
   const id = useParams();
-  const { getAboutProd, cartProd, setCartProd } = useProd();
+  const { getAboutProd, setCartProd } = useProd();
   console.log(prod);
 
   const prodIncrement = () => {
@@ -54,8 +54,9 @@ const AboutProduct = () => {
 
   useEffect(() => {
     getProd(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
-  
+
   useEffect(() => {
     if (prod.length === 0) {
       setIsLoading(true);
@@ -63,7 +64,7 @@ const AboutProduct = () => {
       setIsLoading(false);
     }
   }, [prod]);
-  
+
   return (
     <div className="aboutProds">
       {isLoading ? (

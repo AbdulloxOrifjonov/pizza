@@ -14,6 +14,7 @@ const AdminLogin = () => {
     if (token) {
       navigate("/admin/add");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = (e) => {

@@ -6,11 +6,12 @@ import { Outlet } from "react-router-dom";
 import AdminNavbar from "../components/Admin/AdminNavbar";
 
 const AdminLayout = () => {
-  const { user, checkAdmin } = useAuth();
+  const {  checkAdmin } = useAuth();
 
   useEffect(() => {
     checkAdmin();
     console.log(localStorage.getItem("admin"));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

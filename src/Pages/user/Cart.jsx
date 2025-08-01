@@ -6,12 +6,11 @@ import back from "../../images/back.png";
 import nalichi from "../../images/cart_nalichi_icon.png";
 import karta from "../../images/cart_karta_icon.png";
 import ptichka from "../../images/ptichka.png";
-import karzina_prod from "../../images/karzina_prod.png";
 import { useProd } from "../../context/ProdContext";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { getAboutProd, cartProd, setCartProd } = useProd();
+  const {  cartProd } = useProd();
   const [nalichiActive, setNalichiActive] = useState(true);
   const [kuryerActive, setKuryerActive] = useState(true);
   const [vremya, setVremya] = useState(true);
@@ -66,6 +65,7 @@ const Cart = () => {
       navigate("/");
     }
     console.log(formData);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData]);
 
   const productAdded = () => {

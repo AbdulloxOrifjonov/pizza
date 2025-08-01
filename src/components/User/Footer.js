@@ -1,9 +1,6 @@
 /** @format */
 
 import React from "react";
-import instagram from "../../images/instagram.svg";
-import whatsapp from "../../images/whatsapp.svg";
-import telegram from "../../images/telegram.svg";
 
 const Footer = () => {
   return (
